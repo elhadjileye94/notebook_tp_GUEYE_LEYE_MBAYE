@@ -1,3 +1,4 @@
+# Code jeu de la vie.
 def calcul_nb_voisins(Z):
   forme = len(Z), len(Z[0])
   N = [[0, ] * (forme[0]) for i in range(forme[1])]
