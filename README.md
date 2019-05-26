@@ -1,8 +1,11 @@
 # notebook_tp_GUEYE_LEYE_MBAYE
 INTRODUCTION
+
 Dans le cadre  de l'évaluation de l'UE DEVELOPPEMENT LOGICIEL (partie python), un projet  composé de deux parties nous a été soumis. Une première partie concernant le jeu de la vie qui est un automate cellulaire mise au point par le  mathématicien britannique John Horton Conway en  1970. Et une deuxième partie qui concerne la régression logistique.
 L’application de ce travail pratique sera faite avec le logiciel Python.
+
 PARTIE 1
+
 Dans cette partie nous allons mettre en  œuvre l’exercice 1 du TP.
 Etape 1 : Implémentation sans numpy.
 On applique la fonction donnée calcul_nb_voisins à Z pour calculer le nombre de voisins des cellules de Z. A la sortie on obtient N-nombre_de_voisin.
@@ -11,7 +14,9 @@ Etape 2 : Implémentation avec  numba.
 Nous reprenons la section précédente avec des fonctions qui utilisent « numba » et la compilation « jit » dont nous proposons un protocole pour voir son effet sur le temps de calcul.
 Remarque : Pour la comparaison des temps de calcul, on voit qu’après un « Restart_and_Run_all», la fonction « iteration » qui utilise la fonction « jit » a un plus grand temps d’exécution mais après une deuxième exécution cette fonction a un temps  d’exécution plus petit que  la fonction « iteration » d’origine. Ceci est dû  au fait que pour une première exécution l’importation de la fonction « jit » impacte sur le  temps d’exécution.
 Nous avons aussi  créé un « widget » qui permet au curseur de contrôler les itérations du jeu avec comme graine initiale la matrice Z_huge.
+
 PARTIE 2
+
 On va s’intéresser dans cette partie à la régression logistique.
 Nous travaillons avec les  données MNIST que nous allons charger via la commande «from sklearn.datasets import fetch_openml ».
 On va transformer les données X et y pour ne garder que les chiffres 3 et 7 de ces données en utilisant la fonction « mask ». Ainsi nous visualisons un exemple de chaque classe d’image avec la commande « imshow ».
