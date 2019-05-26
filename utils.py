@@ -70,3 +70,14 @@ def predir(x):
     plt.show()
     
     #################################################################################################
+
+def fig_digit(alpha):
+    """
+    La fonction fig_digit reçoit en entrée un paramètre alpha et utilise l'image associée au chiffre 7 et
+    nous renvoie la transformation de cette image.
+    """
+    x=X7[2]
+    x_mod=x-alpha*(np.dot(W,x)/np.dot(W,W.T))*W
+    plt.title('image modifier ')
+    plt.imshow(np.matrix(x_mod).reshape(28,28), cmap=plt.cm.gray_r, interpolation='nearest')
+    plt.show()
