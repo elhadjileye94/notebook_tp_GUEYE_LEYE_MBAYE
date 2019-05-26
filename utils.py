@@ -57,3 +57,16 @@ def iter(n):
         
         ##################################################################################################
         
+def predir(x):
+    """
+    La fonction predir reçoit en entrée l'image x et renvoie l'image x et une prédiction de cette image.
+    """
+    a=np.dot(W,x)
+    if a>0:
+        print("la classe de l'image est 7")
+    else:
+        print("la classe de l'image est 3")
+    plt.imshow(np.matrix(x).reshape(28,28), cmap=plt.cm.gray_r, interpolation='nearest')
+    plt.show()
+    
+    #################################################################################################
